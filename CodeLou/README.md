@@ -1,0 +1,3 @@
+This is a website for a small property management firm to use to both advertise their services and list rentals available as well as provide an online option for existing tenants to submit workorders and pay rent.  I did not complete the content as that this company is only a concept.
+
+This site is best viewed by running index.html and then clicking through the links one by one in the nav bar.  The existing tenant portal must be viewed separately under dashboard.html. 

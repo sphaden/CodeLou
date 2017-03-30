@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!--links to stylesheets-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width">
+    </head> 
+   
+    <header class="header"> 
+            <a href="index.html"><img src="img/logo.png" alt="Castle logo" class="logo"></a>
+            <a href="index.html" class="title">
+               <h1>Castle Property Management</h1>
+              </a>
+                     <!--links to different pages-->
+            <nav>
+                <ul class="nav"> 
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="listings.html">Listings</a></li>
+                  <li><a href="login.html" class="selected">Login</a></li>
+                </ul>
+            </nav>
+    </header>
+    <body>
+        <div class="column">
+            <form action="#" method="post" class="newtenant">
+            <label>New Tenant Registration</label>
+            <p>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+                <span>Enter a password longer than 8 characters</span>
+            </p>
+            <p>
+                <label for="confirm_password">Confirm Password</label>
+                <input id="confirm_password" name="confirm_password" type="password">
+                <span>Please confirm your password</span>
+            </p>
+            <p>
+                <input type="submit" value="SUBMIT" id="submit">
+            </p>
+            <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	       <script src="java/jquery.js" type="text/javascript" charset="utf-8"></script>
+            </form>
+        <form action="#" method="post" class="existingtenant">
+            <label>Existing Tenant Login</label>
+            <p>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+            </p>
+            <p>
+			     <input type="submit" value="SUBMIT" id="submit">
+		    </p>
+	   </form>
+        </div>
+    </body>
+        <!--footer with additional links and info on company-->
+        <footer>
+            <div>
+                <ul class="contact">
+                    <li>Phone - (502)555-5555</li>
+                    <li>Email - help@castle.com</li>
+                    <li>Office Hours - Monday thru Friday 9am to 5pm</li>
+                </ul>
+            </div>
+            <div id="wrapper">
+                <a href="https://twitter.com/JoeBlow26152287"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+                <a href="https://www.facebook.com/stephen.haden.77"><img src="img/facebook-wrap.png"      alt="Facebook Logo" class="social-icon"></a>
+                <p>&copy; 2017 Stephen Haden</p>
+            </div>
+        </footer>
+     
+</html>

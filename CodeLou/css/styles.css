@@ -1,0 +1,275 @@
+/*Header for page*/
+header {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    text-decoration: none;
+    background: grey;
+    
+}
+
+.logo {
+    width: 100px;
+    border-style: solid;
+    border-color: black;
+    border: 20%;
+    order: 1;
+}
+.title {
+    color: #0E083B;
+    text-decoration: inherit;
+    text-shadow: 3px 2px #847EB1;
+    margin: none;
+    order: 2;
+    
+}
+/*nav bar design*/
+
+.nav {
+    list-style-type: none;
+    order: 3;
+    padding: 5px;
+}
+/*unselected link color*/
+nav a, nav a:visited {
+    color: whitesmoke;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 1px;
+    text-decoration-line: none;
+    padding: none;
+}
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: lightblue;
+}
+
+ /*main body styling for each page*/
+
+}
+body {
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;  
+}
+
+.column {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: black;
+    margin: 10px;
+       
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+
+}
+.item {
+    list-style: none;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    margin: 10px;
+    padding: 2px;
+    max-width: 769px; /*this aligns the box width with the starting media selector*/
+}
+/*about page main body styling*/
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/*office photo on about page*/
+#office-photo {
+    max-height: 300px;
+    max-width: 250px;
+    margin: 10px auto;
+    border: 5px solid black;
+}
+
+/*styling for listing page*/
+
+
+table {
+  max-width: 960px;
+  margin: 10px auto;
+}
+
+caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+thead th {
+  font-weight: 400;
+  background: #8a97a0;
+  color: #FFF;
+  text-align: center;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+  font-weight: 300;
+}
+
+tfoot tr {
+  background: none;
+}
+
+tfoot td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #8a97a0;
+}
+
+.listimg {
+    max-height: 100px;
+    margin: none;
+
+    
+}
+
+/*styling for login page*/
+/*sign-in forms*/
+.newtenant {
+    background: brown;
+    color: white;
+    width: 350px;
+    align-self: center;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+.existingtenant {
+    background: grey;
+    color: bisque;
+    width: 350px;
+    align-self: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+/*footer design*/
+footer {
+    order: 3;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    color: whitesmoke;
+    background: grey;
+    padding: 20px;
+ 
+    
+}
+/*had to create separate class for footer text to get rid of bullets*/
+.contact {
+    list-style: none;
+    
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	header {
+        display: flex;
+        flex-flow: wrap;
+        text-align: left;
+	}
+
+    .logo {
+        margin: 10px;
+        flex-grow: 1;
+    }
+    
+    .title {
+        align-self: right;
+        flex-grow: 1;
+        margin-right: 90px 30px 0 0;
+    
+    }
+    
+    nav {
+        flex-grow: 3;
+    }
+    
+    /*main body styling for each page*/
+    .column {
+        flex-direction: row;
+        flex-wrap: nowrap;
+         
+    }
+
+    .items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .item {
+        width: 45%;
+        
+    }
+    
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 50px;
+    }
+    
+
+    
+    .newtenants, .existingtenants{
+        align-items: center;
+    }
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		justify-content: space-between;
+        
+	}
+    
+    .title {
+        font-size: 2em;
+        
+    }
+    .links {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 3em;
+    }
+    
+    .item {
+        width: 20%;
+    }
+}
+
+
