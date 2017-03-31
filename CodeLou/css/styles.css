@@ -1,4 +1,4 @@
-/*Header for page*/
+/*Header for pages*/
 header {
     text-align: center;
     display: flex;
@@ -19,12 +19,15 @@ header {
     order: 1;
 }
 .title {
-    color: #0E083B;
-    text-decoration: inherit;
-    text-shadow: 3px 2px #847EB1;
-    margin: none;
-    order: 2;
-    
+    color: #2F879D; 
+    font-family: 'Rouge Script', cursive; 
+    font-size: 40px; 
+    font-weight: normal; 
+    line-height: 90px; 
+    margin: 0 0 0px; 
+    text-align: center; 
+    text-shadow: 1px 1px 2px #082b34;
+    order: 2;  
 }
 /*nav bar design*/
 
@@ -78,7 +81,12 @@ body {
     align-self: flex-start;
     margin: 10px;
     padding: 2px;
-    max-width: 769px; /*this aligns the box width with the starting media selector*/
+    max-width: 769px; 
+}
+
+.bodyimg {
+    height: 50px;
+    border: 1px solid black;
 }
 /*about page main body styling*/
 .about {
@@ -151,6 +159,7 @@ tfoot td {
 }
 
 /*styling for login page*/
+
 /*sign-in forms*/
 .newtenant {
     background: brown;
