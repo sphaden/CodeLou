@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <!--links to stylesheets-->
+      <!--links to javascript and stylesheets-->
     <meta charset="utf-8">
-    
+    <script type="text/javascript" src="java/jquery-3.2.0.js"></script>
+    <script type="text/javascript" src="java/jquery.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/dashboard.css">
@@ -28,7 +29,7 @@
  <body>
       <form action="index.html" method="post">
       <!---form is used by tenant to submit workorder when repairs are needed-->
-        <h1>Work Order</h1>
+        <h1 id="worktitle">Work Order</h1>
         <fieldset>
           <legend><span class="number">1</span>Contact info</legend>>
           
@@ -55,40 +56,43 @@
                     <option value="Toilet">Toilet</option>   
                 </optgroup>
                 <optgroup label="HVAC">
-                    <option value="android_developer">Air Conditioner</option>
-                    <option value="ios_developer">Furnace</option>
-                    <option value="mobile_designer">Thermostat</option>
+                    <option value="air conditioner">Air Conditioner</option>
+                    <option value="furnace">Furnace</option>
+                    <option value="thermostat">Thermostat</option>
                 </optgroup>
                 <optgroup label="Miscellaneous">
-                    <option value="Structure Damage">Structure Damage</option>
-                    <option value="freelancer">Other</option>
+                    <option value="structure damage">Structure Damage</option>
+                    <option value="other">Other</option>
                 </optgroup>
            </select>
               <label for="bio">Description:</label>
           <textarea id="bio" name="user_bio"></textarea>
         </fieldset>
            
-        <button type="submit">Sign Up</button>
+        <button type="submit">SUBMIT</button>
              
       </form>
-      <form>
-    <div class="form-container">
-      <div class="personal-information">
-        <h1>Payment Information</h1>
-      </div> <!-- end of personal-information -->
-      
-      <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
-      <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
-      <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
-      <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
-    
-        <div class="card-wrapper"></div>
-          <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
-          <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
-          <input id="input-field" type="text" name="number" placeholder="Card Number"/>
-          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
-          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
-          <input id="input-button" type="submit" value="Submit"/>
+     
+    <form>
+          <!-- form to pay rent -->
+        <div class="form-container">
+          <div class="personal-information">
+            <h1 id="paytitle">Payment Information</h1>
+          </div> 
+
+          <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Street Address"/>
+          <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+          <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+          <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+
+        <div class="card-wrapper" img src="img/creditcard.png" id="creditcard"></div>
+            <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
+            <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+            <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+            <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+            <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+            <input id="input-button" type="submit" value="Submit"/>
+        </div>    
   </form>
     </body>
         <!--footer with additional links and info on company-->
